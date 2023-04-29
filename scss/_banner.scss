@@ -1,0 +1,48 @@
+#banner{
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        .box{
+            padding-bottom: 80px;
+            .box-details{
+                margin: 30px;
+                p{
+                    font-family: $sub-title;
+                    color: white;
+                    font-size: 1.3rem;
+                }
+                h1{
+                    font-family: $sub-title;
+                    color: white;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .one{
+            grid-row: 1 / span 2;
+            background: url("../images/img1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .two{
+            
+            background: url("../images/img2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .three{
+            
+            background: url("../images/img3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

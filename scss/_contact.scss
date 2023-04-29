@@ -1,0 +1,44 @@
+#contact{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0 100px 0;
+    .details{
+        text-align: center;
+        p{
+            font-family: $sub-title;
+            font-size: 1.5rem;
+            color: $text1;
+        }h3{
+            font-family: $title;
+            color: $text1;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+    }.contact{
+        form{
+            width: fit-content;
+            margin: 0 auto;
+                input{
+                    width: 300px;
+                    padding: 20px;
+                    margin: 10px;
+                    font-size: 1.1rem;
+                    color: black;
+                    font-family: $sub-title;
+                    outline: none;
+                    border: 1px solid $text3;
+                }
+            #btn{
+                width: 343px;
+                padding: 20px;
+                margin: 10px;
+                background: $btn-bg;
+                color: white;
+                font-size: 1.1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#menu{
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 100px;
+    .details{
+        text-align: center;
+        padding-top: 50px;
+        span{
+            padding: 5px 20px;
+            background: $title-bg;
+            font-family: $sub-title;
+            font-size: 1.2rem;
+            color: $text1;
+        }
+        h2{
+            font-family: $title;
+            text-transform: uppercase;
+            color: $text1;
+            padding: 20px 0 10px 0;
+            font-size: 2rem;
+        }
+        p{
+            font-size: .8rem;
+            font-family: $p;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 60px;
+        .box{
+            text-align: center;
+            img{
+                height: 200px;
+            }
+            h6{
+                font-family: $sub-title;
+                font-size: 1.5rem;
+                color: $text1;
+                
+            }
+            p{
+                padding: 20px;
+                font-family: $p;
+                color: $text3;
+                font-size: .8rem;
+            }
+            .btn{
+                font-family: $sub-title;
+                color: $text2;
+                background: $btn-bg;
+                padding: 10px 40px;
+                border: none;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

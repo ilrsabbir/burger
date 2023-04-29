@@ -1,0 +1,57 @@
+#carousol{
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+    .carousol{
+        background: white;
+        padding: 20px 0;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.459);
+        .box{
+            display: flex;
+            justify-content: space-between;
+            .content{
+                padding: 30px;
+                span{
+                    font-family: $sub-title;
+                    font-size: 1.2rem;
+                    color: $text3;
+                }
+                h3{
+                    font-family: $title;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    color: $text1;
+                    padding: 5px 0 10px 0;
+                }
+                p{
+                    font-family: $p;
+                    font-size: .9rem;
+                    color: $text3;
+                    line-height: 1.6rem;
+                }
+            }
+            .image{
+                padding: 0 20px;
+                box-sizing: border-box;
+                img{
+                    width: 500px;
+                }
+            }
+        }
+        .swiper-pagination{
+            position: absolute;
+            left: 30px !important;
+            bottom: 0 !important;
+            width: fit-content;
+        }
+        .swiper-pagination-bullet{
+            background: $title-bg;
+            height: 15px;
+            width: 15px;
+            background: #000000;
+        }
+        .swiper-pagination-bullet-active{
+            background: $title-bg !important;
+        }
+    }
+}

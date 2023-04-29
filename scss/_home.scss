@@ -1,0 +1,86 @@
+#home{
+    height: fit-content;
+    width: 100%;
+    background: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .home{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .details{
+            width: 50%;
+            span{
+                padding: 5px 20px;
+                border: 2px dashed $text1;
+                font-family: $sub-title;
+            }
+            h1{
+                font-family: $title;
+                text-transform: uppercase;
+                font-size: 6rem;
+                text-shadow: 4px 4px 5px white;
+                color: $text1;
+            }
+            h2{
+                font-family: $title;
+                text-transform: uppercase;
+                font-size: 4rem;
+                text-shadow: 4px 4px 5px white;
+                line-height: 2rem;
+                color: $text1;
+            }
+        }
+        .img{
+            width: 50%;
+            position: relative;
+            img{
+                width: 600px;
+            }
+            .tag{
+            position: absolute;
+            content: "";
+            bottom: 5%;
+            left: 5%;
+            height: 200px;
+            width: 200px;
+            background-color: $btn-bg;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .tag-details{
+                h3{
+                    font-size: 4rem;
+                    font-family: $sub-title;
+                    color: white;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
+                p{
+                    font-family: $sub-title;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    color: white;
+                    letter-spacing: .5rem;
+                    line-height: 1rem;
+                }       
+            }
+            }.tag::after{
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 160px;
+                width: 160px;
+                border: 2px dashed white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
